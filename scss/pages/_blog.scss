@@ -1,0 +1,132 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blogBanner {
+  background: url(../../IMG/aaec3d71-group-62.png);
+  background-color: $clr--dark;
+  position: relative;
+  &__wrapper {
+    padding: 5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      text-align: center;
+      font-family: $font--secondary;
+    }
+    img {
+      position: absolute;
+
+      width: 15rem;
+      object-fit: cover;
+      right: -1.5%;
+    }
+   
+  }
+  &__img{
+    img{
+        position: absolute;
+        left: -1.5%;
+    }
+  }
+}
+.blogPost {
+  padding: 9rem 0;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    h1 {
+      font-size: 3rem;
+      color: $clr--dark;
+    }
+    p {
+      color: $clr--dark;
+      font-family: $font--secondary;
+    }
+  }
+  &__wrapper {
+    @include evenGrid(2, 5rem);
+  }
+  &__card {
+    display: flex;
+    gap: 2rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    img {
+      width: 12rem;
+    }
+
+    &--details {
+      h3 {
+        font-family: $font--secondary;
+        color: $clr--primary;
+      }
+      h2 {
+        color: $clr--dark;
+      }
+      p {
+        font-family: $font--secondary;
+        color: $clr--dark;
+      }
+      a {
+        font-family: $font--secondary;
+        font-weight: bold;
+        color: $clr--dark;
+      }
+    }
+    &--icon {
+      display: flex;
+      gap: 1rem;
+      a {
+        color: $clr--dark;
+      }
+      p {
+        text-transform: uppercase;
+        color: $clr--dark;
+      }
+    }
+  }
+}
+.blogTravel{
+  
+  &__title{
+    margin-top: 7rem;
+    text-align: center;
+    h1{
+      color: $clr--dark;
+      font-size: 5rem;
+    }
+    &--insta{
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      a{
+      color: $clr--primary;
+      font-size: 3rem;
+    }
+    h2{
+      color: $clr--dark;
+      font-family: $font--secondary;
+       font-size: 2rem;
+       font-weight: 100;
+       margin-top: .5rem;
+    }
+    }
+   
+    
+  } 
+  &__img img{
+     width: 25rem; 
+     height: 20rem;
+    }
+}

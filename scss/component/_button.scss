@@ -1,0 +1,47 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.btn{
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+
+
+    &.bg--secondary{
+        @extend .btn;
+        display: inline-block;
+        // margin-top: 49px;
+        text-decoration: none;
+        font-family: $font--secondary;
+        background-color: $clr--primary;
+        text-transform: uppercase;
+        padding: 16px 32px;
+        font-weight:550;
+        color: $clr--light;
+       
+           &:hover{
+            background-color: $clr--light;
+            border: 1px $clr--light;
+            color: $clr--primary;
+    }
+    }
+    &.bg--dark{
+        @extend .btn;
+            display: inline-block;
+        
+        text-decoration: none;
+         font-family: $font--secondary;
+        background-color: $clr--dark;
+        text-transform: uppercase;
+        padding: 16px 32px;
+        font-weight:550;
+        color: $clr--light;
+
+         &:hover{
+            background-color: $clr--light;
+            border: 1px $clr--light;
+            color: $clr--dark;
+    }
+}
+}
